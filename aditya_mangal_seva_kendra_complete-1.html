@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="mr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>आदित्य मंगल सेवा केंद्र</title>
+<style>
+:root{--red:#a82019;--red2:#d34825;--cream:#fff8ed;--ink:#242424;--muted:#666;--border:#e7d8c4;--green:#16833b}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;background:var(--cream);color:var(--ink)}
+header{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;text-align:center;padding:30px 16px}
+header h1{margin:0;font-size:clamp(28px,7vw,46px)} header p{margin:8px 0} .phone{display:inline-block;margin-top:8px;background:#fff;color:var(--red);padding:8px 14px;border-radius:999px;font-weight:800}
+main{max-width:1100px;margin:auto;padding:16px} section{background:#fff;border:1px solid var(--border);border-radius:18px;padding:16px;margin-bottom:18px}
+h2{color:var(--red);margin-top:0} .table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:650px} th,td{border-bottom:1px solid var(--border);padding:9px;text-align:left}
+th{background:#fff0dc;color:#7c241d;position:sticky;top:0} .qty,.rate{width:86px;padding:8px;border:1px solid #ccc;border-radius:8px;font-size:16px}
+.total{font-weight:800} .grand{font-size:20px;font-weight:900;text-align:right;padding:14px;background:#fff6df;border-radius:10px;margin-top:10px}
+form{display:grid;gap:12px} .field{font-weight:700} .field input,.field textarea{display:block;width:100%;padding:12px;margin-top:5px;border:1px solid #ccc;border-radius:10px;font-size:16px}
+.btn{border:0;border-radius:12px;padding:13px 18px;background:var(--red);color:white;font-weight:800;font-size:16px;cursor:pointer} .btn.green{background:var(--green)}
+.notice{background:#fff6df;padding:12px;border-radius:10px;color:#6a4b12} footer{text-align:center;color:var(--muted);padding:22px}
+@media(max-width:600px){main{padding:10px}section{padding:12px}}
+</style>
+</head>
+<body>
+<header>
+<h1>आदित्य मंगल सेवा केंद्र</h1>
+<p>मंगल कार्य • लग्न • वाढदिवस • धार्मिक कार्यक्रम • जेवणासाठी भांडी भाड्याने</p>
+<div class="phone">📞 9423235510</div>
+</header>
+<main>
+<section>
+<h2>📦 उपलब्ध भांडी व साहित्य</h2>
+<p class="notice">दर तुमच्या दिलेल्या यादीप्रमाणे भरले आहेत. ज्या वस्तूचा दर फोटोमध्ये स्पष्ट दिलेला नव्हता, तो ₹0 ठेवला आहे.</p>
+<div class="table-wrap">
+<table id="itemsTable">
+<thead><tr><th>क्र.</th><th>वस्तू / साहित्य</th><th>संख्या</th><th>दर (₹)</th><th>एकूण (₹)</th></tr></thead>
+<tbody><tr>
+<td>1</td>
+<td class="name">मोठी कडई</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="200" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="name">छोटी कडई</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="100" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>3</td>
+<td class="name">मोठे पातेलं</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="200" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>4</td>
+<td class="name">लहान पातेलं</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>5</td>
+<td class="name">झाकण</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="10" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>6</td>
+<td class="name">जिलबी तवा</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>7</td>
+<td class="name">मोठे उलथणे</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="25" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>8</td>
+<td class="name">च. उलथणे</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="25" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>9</td>
+<td class="name">तास</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="25" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>10</td>
+<td class="name">ग्लास</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>11</td>
+<td class="name">टोपले</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="15" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>12</td>
+<td class="name">बादली</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="15" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>13</td>
+<td class="name">जग</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="10" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>14</td>
+<td class="name">भातवाडी</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="5" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>15</td>
+<td class="name">सुप</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="5" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>16</td>
+<td class="name">वगराळे</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="5" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>17</td>
+<td class="name">चमचे</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="5" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>18</td>
+<td class="name">गॅस बत्ती</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>19</td>
+<td class="name">बॉलर</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="50" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>20</td>
+<td class="name">मॅट</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="70" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>21</td>
+<td class="name">चाळणी</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>22</td>
+<td class="name">भाजणीपात्र</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>23</td>
+<td class="name">दांडी पातेलं</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="25" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>24</td>
+<td class="name">पट बेलने</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="25" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>25</td>
+<td class="name">खिरवणी</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>26</td>
+<td class="name">बतई</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>27</td>
+<td class="name">विळी</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="5" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>28</td>
+<td class="name">आसन पट्टी</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>29</td>
+<td class="name">सतरंजी</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="50" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>30</td>
+<td class="name">झेंगडा</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="150" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>31</td>
+<td class="name">च. शेगडा</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="300" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr>
+<tr>
+<td>32</td>
+<td class="name">छोटा च. शेगडा</td>
+<td><input class="qty" type="number" min="0" step="1" value="0" inputmode="numeric"></td>
+<td><input class="rate" type="number" min="0" step="1" value="200" inputmode="numeric"></td>
+<td class="total">₹0</td>
+</tr></tbody>
+</table>
+</div>
+<div class="grand">एकूण बुकिंग रक्कम: <span id="grand">₹0</span></div>
+</section>
+
+<section id="booking">
+<h2>📋 ग्राहक बुकिंग माहिती</h2>
+<form id="form">
+<label class="field">ग्राहकाचे नाव<input id="customer" required placeholder="ग्राहकाचे नाव"></label>
+<label class="field">ग्राहकाचा मोबाईल नंबर<input id="custPhone" type="tel" required placeholder="10 अंकी मोबाईल नंबर"></label>
+<label class="field">कार्यक्रमाची तारीख<input id="date" type="date" required></label>
+<label class="field">कार्यक्रमाचा प्रकार<input id="event" placeholder="उदा. लग्न, वाढदिवस, जेवण"></label>
+<label class="field">पत्ता / डिलिव्हरी माहिती<textarea id="address" rows="2" placeholder="पत्ता किंवा डिलिव्हरीची माहिती"></textarea></label>
+<label class="field">अतिरिक्त आवश्यकता<textarea id="notes" rows="3" placeholder="इतर आवश्यकता"></textarea></label>
+<button class="btn" type="submit">📲 WhatsApp वर बुकिंग पाठवा</button>
+<button class="btn green" type="button" id="copyBtn">📋 बुकिंग मेसेज कॉपी करा</button>
+</form>
+</section>
+</main>
+<footer>© 2026 आदित्य मंगल सेवा केंद्र • 9423235510</footer>
+
+<script>
+const BUSINESS_PHONE="919423235510";
+const rows=[...document.querySelectorAll("#itemsTable tbody tr")];
+
+function money(n){return "₹"+Math.round(n).toLocaleString("en-IN");}
+
+function buildMessage(){
+  let grand=0, selected=[];
+  rows.forEach(r=>{
+    const name=r.querySelector(".name").textContent.trim();
+    const qty=Math.max(0,Number(r.querySelector(".qty").value)||0);
+    const rate=Math.max(0,Number(r.querySelector(".rate").value)||0);
+    const total=qty*rate;
+    r.querySelector(".total").textContent=money(total);
+    grand+=total;
+    if(qty>0) selected.push("• "+name+" | "+qty+" × ₹"+rate+" = "+money(total));
+  });
+  document.getElementById("grand").textContent=money(grand);
+  if(!selected.length) return null;
+  return "आदित्य मंगल सेवा केंद्र - बुकिंग विनंती\n\n"+
+    "ग्राहकाचे नाव: "+document.getElementById("customer").value+"\n"+
+    "ग्राहकाचा मोबाईल: "+document.getElementById("custPhone").value+"\n"+
+    "कार्यक्रमाची तारीख: "+document.getElementById("date").value+"\n"+
+    "कार्यक्रम: "+document.getElementById("event").value+"\n"+
+    "पत्ता / डिलिव्हरी: "+document.getElementById("address").value+"\n\n"+
+    "आवश्यक साहित्य:\n"+selected.join("\n")+
+    "\n\nएकूण रक्कम: "+money(grand)+
+    "\n\nअतिरिक्त आवश्यकता: "+document.getElementById("notes").value;
+}
+
+document.querySelectorAll(".qty,.rate").forEach(el=>el.addEventListener("input",buildMessage));
+
+document.getElementById("form").addEventListener("submit",e=>{
+ e.preventDefault();
+ const msg=buildMessage();
+ if(!msg){alert("कृपया किमान एका वस्तूची संख्या निवडा.");return;}
+ window.open("https://wa.me/"+BUSINESS_PHONE+"?text="+encodeURIComponent(msg),"_blank");
+});
+
+document.getElementById("copyBtn").addEventListener("click",async()=>{
+ const msg=buildMessage();
+ if(!msg){alert("कृपया किमान एका वस्तूची संख्या निवडा.");return;}
+ try{await navigator.clipboard.writeText(msg);alert("बुकिंग मेसेज कॉपी झाला.");}
+ catch(e){prompt("हा मेसेज कॉपी करा:",msg);}
+});
+</script>
+</body>
+</html>
